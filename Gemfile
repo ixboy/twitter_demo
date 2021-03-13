@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -29,11 +31,14 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
-# Authenication
-gem 'devise', '~> 4.7', '>= 4.7.3'
+gem 'bulma-rails', '~> 0.9.1'
+gem 'simple_form', '~> 5.1'
 
 # User Image
 gem 'gravatar_image_tag', '~> 1.2'
+
+# Authenication
+gem 'devise', '~> 4.7', '>= 4.7.3'
 
 group :development, :test do
   # use sqlite3 as the database for ActiveRecords
